@@ -33,6 +33,5 @@ return [
     'texts' => 'Văn bản',
     'translate' => 'Dịch',
     'translations' => 'Bản dịch',
-    'native_name' => 'Tên bản địa'
-
+    'native_name' => 'Tên bản địa',
 ];
