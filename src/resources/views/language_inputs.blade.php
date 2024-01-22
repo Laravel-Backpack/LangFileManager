@@ -22,7 +22,7 @@
 			<div style="margin-left: 15px;">
 			@foreach ($chuncks as $k => $chunck)
 				@php
-				preg_match('/^({\w}|\[[\w,]+\])([\w\s:]+)/', trim($chunck), $m);
+				preg_match('/^({\w}|\[[\w,*]+\])(.+)/', trim($chunck), $m);
 				@endphp
 				@if (empty($m))
 					<label for="{{ $chunck }}" class="col-sm-2 control-label">{{ (!$k ? trans('admin.language.singular') : trans('admin.language.plural')).":" }}</label>
