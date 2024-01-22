@@ -195,6 +195,7 @@ class LangFiles
             $this->setArrayValue($returnArray, $keys, $value);
         }
 
+        ksort($returnArray);
         return $returnArray;
     }
 
